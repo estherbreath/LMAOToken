@@ -3,8 +3,6 @@ pragma solidity 0.8.19;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-
-
 contract WLMAOToken is ERC20("WLMAOToken", "WTK"){
     IERC20 LMAO;
       constructor(address _LMAO) {
@@ -17,7 +15,7 @@ contract WLMAOToken is ERC20("WLMAOToken", "WTK"){
         _mint(msg.sender, calcAmount);
       }
 
-      function swapToken (uint _amount) public {
+      function WithdrawToken (uint _amount) public {
         require (balanceOf (msg.sender) >= _amount, "balance must be greater than amount");
         LMAO.transfer(msg.sender, _amount);
         _burn(msg.sender, _amount);

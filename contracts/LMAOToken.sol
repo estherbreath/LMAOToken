@@ -16,7 +16,4 @@ function _transfer(address from, address to, uint256 amount) internal virtual ov
       super._transfer(from, to, remainder);
       super._transfer(from, owner, feeOnTransfer);
 }
-
-
-
 }

@@ -9,8 +9,9 @@ const config: HardhatUserConfig = {
     sepolia: {
       url: process.env.SEPOLIARPC,
       //@ts-ignore
-      accounts: [process.env.PRIVATEKEY,process.env.PRIVATEKEY2,process.env.PRIVATEKEY3,process.env.PRIVATEKEY4],
+      accounts: [process.env.PRIVATEKEY],
     },
+    hardhat: {}
   },
 
   etherscan: {
