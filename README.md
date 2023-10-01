@@ -1,13 +1,5 @@
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+ This is an ERC20 token contract that deducts 8% transfer fee. 
+ 
+ It is native to the project. 
+ 
+ Holders of this token can utilize the WLMAO token for transfers, withdrawals and deposits for free. 
